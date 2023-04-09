@@ -1,0 +1,117 @@
+@import url("./reset.css");
+
+:root {
+    --app-dark-bg: #1a1d28;
+  --app-green: #33ab4e;
+  --app-purple: #833cff;
+  --app-orange: #ff833c;
+  --app-blue: #3c57ff;
+  --app-blue-hover: #364ee6;
+  --app-red: #ff3c57;
+  --app-red-hover: #ff2846;
+  --app-grey: #BEBEBE;
+  --app-white: #f1f1f1;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    text-align-last: center;
+    color: #7D8082;
+    margin-top: 50px ;
+    font-size: 55px;
+}
+
+.container {
+    width: min(100% - 30px, 1080px);
+    margin-inline: auto;
+}
+
+body {
+    background-color: var(--app-grey);
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clock {
+    background-color: var(--app-white);
+    width: 500px;
+    padding: 8px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 75px;
+    display: grid;
+    place-items: center;
+}
+
+.time {
+    font-size: 80px;
+    color: var(--app-dark-bg);
+}
+
+.timer {
+    color: #fff;
+    font-size: 20px;
+}
+
+.timer span {
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+section {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
+
+input[type=text] {
+    margin-top: 8px;
+    width: 120px;
+    height: 42px;
+    margin-bottom: 14px;
+    padding: 0 10px;
+    background-color: #222;
+    font-size: 20px;
+    text-align: left;
+    color: #fff;
+}
+
+.button {
+    margin-left: 15px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background: none;
+    color: #0f1923;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    transition: all .15s ease;
+}
+
+.button_text {
+    position: relative;
+    background-color: var(--app-grey);
+    padding: 8px;
+}
+
+.button:hover .button_sl {
+    width: calc(100% + 15px);
+}
+
+.button:hover .button_lg::after {
+    background-color: #fff;
+}
